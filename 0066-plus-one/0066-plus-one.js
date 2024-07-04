@@ -5,13 +5,13 @@
 var plusOne = function(digits) {
 
 
-    x = String(BigInt(digits.join(''))+1n).split('')
-    a= []
-    x.forEach((e)=>{
-        a.push(Number(e))
-    })
+    x = String(BigInt(digits.join(''))+1n).split('').map(Number)
+    // a= []
+    // x.forEach((e)=>{
+    //     a.push(Number(e))
+    // })
 
-    return a
+    return x
 
     // console.log(String().split())
 };
